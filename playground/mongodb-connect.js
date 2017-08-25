@@ -1,14 +1,14 @@
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient,ObjectID} = require('mongodb'); //this is identical to the code above
 
-var obj = new ObjectID();
-console.log(obj);
-
+----------------------------------------------------------------------------------
 // //Object destructuring
 // //let you pull out objects properties and set them into variables
 // var user = {name: 'John',age: 21};
 // var {name} = user;
 // console.log(name);
+-----------------------------------------------------------------------------------
+
 
 //Connnect to mongo db
 //mongodb://localhost:27017/TodoApp database does not need to be created before use
@@ -21,6 +21,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db)=>{
 	}
 
 	console.log('Connected to mongodb server')
+	//insert records
 
 	// db.collection('Todos').insertOne({
 	// 	text: 'Something todo',
